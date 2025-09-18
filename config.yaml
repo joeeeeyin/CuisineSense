@@ -1,0 +1,58 @@
+data:
+  original_data:
+    root_path: "/home/wangpengcheng/DEAI/food_intake_detect/data/original_food_intake_data/"
+    category_num: 11
+    person_num_per_category: 10
+  generated_data:
+    save_path: "/home/wangpengcheng/DEAI/food_intake_detect/data"
+
+post_models:
+  resnet:
+  cross_vit:
+    # dimensionality of the embeddings for image patches
+    embed_dim: 32
+    num_heads: 8
+    # number of CrossViTBlocks in the model
+    num_layers: 4
+    # dimensionality of the intermediate layer in the MLP
+    mlp_dim: 64
+    dropout: 0.1
+
+train:
+  dataset:
+    sample_length: 512
+    stride: 128
+    cross_person: True
+    test_person_index: 8
+    train_ratio: 0.8
+  pre_model:
+    base_c_watch: 32
+    base_c_glasses: 6
+    num_epochs: 300
+    learning_rate: 0.0003
+    mask_percentage: 0.5
+    patience: 15
+    data_loader:
+      batch_size: 1
+      shuffle: True
+      num_workers: 4
+  post_model:
+    # model_name: "ResNet" or "CrossVit"
+    model_name: "ResNet"
+    num_epochs: 25
+    learning_rate: 0.0003
+    patience: 5
+    # use for train the post model or deploy test the whole model
+    data_loader:
+      batch_size: 16
+      shuffle: True
+      num_workers: 4
+  # logging_mode: "console" or "tensorboard" or "file"
+  logging_mode: "file"
+
+deploy:
+  pre_model:
+    train_id: "2023_11_26_17_47_49"
+    threshold: 3.411
+  post_model:
+    train_id: "2023_11_26_23_01_24"
