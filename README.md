@@ -30,3 +30,14 @@ pip install -r requirements.txt
 ```
 
 ## 🏃 Running the Code
+
+1. Modify the parameters and paths in config.yaml to match your system setup and dataset location.
+2. To **train** the model:
+```bash
+python train.py
+```
+
+3. To **test** the model:
+```bash
+python predict.py
+```
