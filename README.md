@@ -1,0 +1,9 @@
+# CuisineSense: Inferring Chinese Cuisine Intake from Wearable IMUs
+
+**CuisineSense** is a two-stage multimodal system designed to detect eating states and classify fine-grained Chinese food types 
+using wearable Inertial Measurement Units (IMUs). By integrating hand motion cues from a smartwatch and head dynamics from smart
+glasses, CuisineSense bridges the gap in wearable dietary monitoring by addressing the challenge of distinguishing the vast
+diversity of Chinese cuisine.
+
+This repository contains the official implementation of the paper: 
+**"What's on your plate? Inferring Chinese Cuisine Intake from Wearable IMUs"**.
