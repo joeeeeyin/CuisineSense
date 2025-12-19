@@ -41,3 +41,14 @@ python train.py
 ```bash
 python predict.py
 ```
+## Citation
+
+If you find this repository useful, please cite our arXiv preprint:
+
+```bibtex
+@article{yin2025cuisinesense,
+  title={What's on your plate? Inferring Chinese Cuisine Intake from Wearable IMUs},
+  author={Yin, Jiaxi and Wang, Pengcheng and Ding, Han and Wang, Fei},
+  journal={arXiv preprint arXiv:2511.05292},
+  year={2025}
+}
