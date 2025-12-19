@@ -15,4 +15,16 @@ This repository contains the official implementation of the paper:
 📥Dataset Download Link: 
 https://www.kaggle.com/datasets/yinjiaxi/original-food-intake-data
 
+## 🛠️ Installation
 
+[cite_start]The code is tested with **Python 3.8** and **PyTorch 2.0.1**.
+
+To set up the environment and install all dependencies, please run:
+
+```bash
+# 1. Create a conda environment (Recommended)
+conda create -n cuisinesense python=3.8
+conda activate cuisinesense
+
+# 2. Install dependencies
+pip install -r requirements.txt
