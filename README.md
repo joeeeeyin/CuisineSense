@@ -7,3 +7,6 @@ diversity of Chinese cuisine.
 
 This repository contains the official implementation of the paper: 
 **"What's on your plate? Inferring Chinese Cuisine Intake from Wearable IMUs"**.
+
+##📥Dataset Download Link: 
+https://www.kaggle.com/datasets/yinjiaxi/original-food-intake-data
