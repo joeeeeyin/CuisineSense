@@ -1,4 +1,4 @@
-# CuisineSense: Inferring Chinese Cuisine Intake from Wearable IMUs
+# CuisineSense
 
 **CuisineSense** is a two-stage multimodal system designed to detect eating states and classify fine-grained Chinese food types 
 using wearable Inertial Measurement Units (IMUs). By integrating hand motion cues from a smartwatch and head dynamics from smart
@@ -14,4 +14,5 @@ This repository contains the official implementation of the paper:
 
 📥Dataset Download Link: 
 https://www.kaggle.com/datasets/yinjiaxi/original-food-intake-data
+
 
