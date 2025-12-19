@@ -17,7 +17,8 @@ https://www.kaggle.com/datasets/yinjiaxi/original-food-intake-data
 
 ## 🛠️ Installation
 
-The code is tested with **Python 3.8** and **PyTorch 2.0.1**.To set up the environment and install all dependencies, please run:
+The code is tested with **Python 3.8** and **PyTorch 2.0.1**.
+To set up the environment and install all dependencies, please run:
 
 ```bash
 # 1. Create a conda environment (Recommended)
@@ -27,3 +28,16 @@ conda activate cuisinesense
 # 2. Install dependencies
 pip install -r requirements.txt
 
+
+## 🏃 Running the Code
+
+1. Modify the parameters and paths in `config.yaml` to match your system setup and dataset location.
+
+2. To **train** the model:
+
+```bash
+python train.py
+
+3. To **test** the model:
+```bash
+python predict.py
